@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio</title>
+</head>
+
+<body>
+  <!-- ! muted => Doesn't Work In Google Chrome  -->
+  <audio controls loop autoplay>
+    <!-- 
+      * src => soruce
+      * type => name a mime type 
+      TODO: search about that 
+      ? https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+    -->
+    <source src="media/Quran.mp3" type="audio/mpeg">
+    <source src="media/Quran.wav" type="audio/x-wav">
+    <source src="media/Quran.afic" type="audio/x-aiff">
+    <source src="media/Quran.aiff" type="audio/x-aiff">
+    <source src="media/Quran.m4a" type="audio/mp4">
+
+    <!-- * If a browser doesn't support the audio tag U should write a sentence to show him what happen -->
+    Your Browsers Doesn't Support This Audio Tag
+  </audio>
+</body>
+
+</html>

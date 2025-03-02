@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <meta name="description" content="This is my book store.">
+</head>
+
+<body>
+  <form action="test.py" method="post" autocomplete="on" novalidate>
+    <label for="username">Username (Required):</label>
+    <br>
+    <input type="text" id="username" name="username" required placeholder="Enter your username" minlength="3"
+      maxlength="20" autocomplete="name">
+    <hr>
+
+    <label for="password">Password:</label>
+    <br>
+    <input type="password" id="password" name="password" placeholder="Enter a strong password" minlength="8" required>
+    <hr>
+
+    <label for="mobile">Mobile:</label>
+    <br>
+    <input type="tel" id="mobile" name="mobile" placeholder="+20100 (234) 123" autocomplete="tel">
+    <hr>
+
+    <label for="email">Email (Required):</label>
+    <br>
+    <input type="email" id="email" name="email" required placeholder="Enter your email address" autocomplete="email">
+    <hr>
+
+    <label for="subject">Subject:</label>
+    <br>
+    <input type="text" id="subject" name="subject" placeholder="Enter the subject" maxlength="100" autocomplete="off">
+    <hr>
+
+    <input type="hidden" name="hiddenField" value="CIS Team MU">
+
+    <button type="reset">Empty Form</button>
+    <button type="submit">Send Data</button>
+  </form>
+</body>
+
+</html>
